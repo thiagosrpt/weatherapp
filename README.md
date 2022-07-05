@@ -1,6 +1,8 @@
 # DESCRIPTION
 
-- This is an experiment to learn how to manipulate JSON payloads with JavaScript and displaying the data using HTML and CSS. The app utilized data source from 3 endpoints - 1 to identify the user's IP, 2 to identify the user's location using its IP address, 3 calling the weather API by passing a location name string.
+- This is an experiment to learn how to manipulate JSON payloads with JavaScript and displaying the data using HTML and CSS. The app utilized data source from 3 endpoints.
+
+- The app identifies the user's IP > with the IP, it identifies the user's location and returns the current and forecasted weather of the determined location. In addition to that it will also get the weather for the location selected by the user thorugh a type-ahead dropdown menu.
 
 # USE CASES
 
