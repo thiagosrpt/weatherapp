@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+    font-family: sans-serif;
+    color: white;
+}
+
+.forecast {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    height: 90vh;
+}
+
+.day {
+    background: rgba(255, 255, 255, 0.50);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.day p {
+    color:rgb(0, 98, 144)
+}
+
+/* DROPDOWN SEARCH */
+.container {
+    width: 120%;
+    position: relative;
+}
+
+.autocomplete-input {
+    padding: 15px 15px;
+    width: calc(100% -30px);
+    border-radius: 1px;
+    border: none;
+    outline: none;
+    color:rgb(48, 62, 143);
+    font-weight: bold;
+    background-color: white;
+    width: 100%;
+}
+
+.autocomplete-input::placeholder{
+    color: rgb(48, 62, 143);
+}
+
+.autocomplete-list {
+    top: 0px;
+    left: 0px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.autocomplete-list li {
+    color: rgb(48, 62, 143);
+    padding: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+/* END DROPDOWN */
+
+
+
+.location, .temperature {
+    height: 20vh;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.temperature {
+    flex-direction: column;
+}
+
+.degree-section {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.degree-section span {
+    margin: 10px;
+    font-size: 30px;
+}
+
+.degree-section h2{
+    font-size: 40px;
+}
