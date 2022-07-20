@@ -1,10 +1,9 @@
-# DESCRIPTION
+# Weather App
 
 - This is an experiment to learn how to manipulate JSON payloads with JavaScript and displaying the data using HTML and CSS. The app utilized data source from 3 endpoints.
-
 - The app identifies the user's IP > with the IP, it identifies the user's location and returns the current and forecasted weather of the determined location. In addition to that it will also get the weather for the location selected by the user thorugh a type-ahead dropdown menu.
 
-# USE CASES
+## Description
 
 - The App utilize the following APIs Endpoints:
 
@@ -16,7 +15,11 @@ https://api.weatherapi.com/v1/forecast.json?key=c2ef9cc9ff124396863165707220705&
 
 - In addition to that, the app contains a dropdown with typeahead developed using JS. DropDown contains a few extra location options that will refresh the page with the current and forecasted wheather conditions of the selected location.
 
-
-# REQUIREMENTS
+## Getting Started
 
 - This shoud run on an browser and is rendered on client side.
+
+### Installing
+
+* Download files
+* Open index.html on the browser of your choice.
