@@ -23,3 +23,5 @@
 
 * Download files
 * Open index.html on the browser of your choice.
+
+![image](https://github.com/thiagosrpt/weatherapp/blob/c236c2303c8925ce5bed859eb4521eb8e303f14c/weather-app-img.png)
