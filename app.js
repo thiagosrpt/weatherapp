@@ -14,8 +14,7 @@ form.addEventListener('click', Submit);
   let icon2 = document.getElementById("icon2");
   
 
-  const proxy = "https://cros-anywhere.herokuapp.com/";
-  let ip_response = `${[[proxy]]}https://api.ipify.org?format=json`;
+  let ip_response = `https://api.ipify.org?format=json`;
   fetch(ip_response)
     .then((response) => {
       return response.json();
@@ -26,7 +25,7 @@ form.addEventListener('click', Submit);
     });
 
   function getCoordinates(ip) {
-    const location = `${[[proxy]]}http://ip-api.com/json/${ip}`;
+    const location = `https://ipapi.co/${ip}/json/`;
     fetch(location)
       .then((response) => {
         return response.json();
@@ -41,7 +40,7 @@ form.addEventListener('click', Submit);
 
 
   function getWeather(location) {
-    const api = `${[[proxy]]}https://api.weatherapi.com/v1/forecast.json?key=c2ef9cc9ff124396863165707220705&q=${location}&days=7&aqi=no&alerts=no`; // REAL REQUEST
+    const api = `https://api.weatherapi.com/v1/forecast.json?key=c2ef9cc9ff124396863165707220705&q=${location}&days=7&aqi=no&alerts=no`; // REAL REQUEST
     
 
     //must be place here bc the const api is not available outise of this bracket scope.
